@@ -54,15 +54,11 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 4. Construye y ejecuta los contenedores:
 
-``Docker-compose up --build ``
-
-5. Aplica las migraciones de la base de datos:
-
-`docker-compose exec web python manage.py migrate`
+``docker-compose up 
 
 -  El servidor estará disponible en http://localhost:8000. 🌐
 
-6. Uso de los Endpoints 🔗
+1. Uso de los Endpoints 🔗
 
 Registro de Usuario 📝
 
