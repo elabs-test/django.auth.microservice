@@ -37,11 +37,12 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 2. Crea un archivo .env basado en el archivo .env.example ubicado en la carpeta raíz del proyecto,edita el archivo .env para incluir la configuración necesaria. A continuación, se muestra un ejemplo con los valores predeterminados:
 
-- `POSTGRES_DB`= auth_db
-- `POSTGRES_USER`= postgres
-- `POSTGRES_PASSWORD`=adminpass
-- `POSTGRES_HOST`=db
-- `POSTGRES_PORT`=5432
+- DEBUG=1
+- DB_NAME=auth_db
+- DB_USER=postgres
+- DB_PASSWORD=adminpass
+- DB_HOST=db
+- DB_PORT=5432
 
 1. Verifica las dependencias en el archivo requirements.txt:
 
