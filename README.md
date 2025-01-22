@@ -35,8 +35,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 1. Clona el repositorio.
 
-2. Crea un archivo .env en la raíz del proyecto con las siguientes variables:
-
+2. Crea un archivo .env apartir de .env.example en la carpeta raiz del proyecto.
 
 - `POSTGRES_DB`=name_bd
 - `POSTGRES_USER`=users_bd
