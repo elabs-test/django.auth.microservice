@@ -1,6 +1,6 @@
 # Microservicio de Autenticación
 
-Este es un microservicio de autenticación desarrollado en Django y Dockerizado, que forma parte de una plataforma de retos para usuarios. Proporciona funcionalidades de registro, inicio de sesión y recuperación de contraseña.
+Este es un microservicio de autenticación desarrollado en Django. Proporciona funcionalidades de registro,inicio de sesión y recuperación de contraseña.
 
 ---
 
@@ -8,10 +8,9 @@ Este es un microservicio de autenticación desarrollado en Django y Dockerizado,
 
 - Registro de usuarios con validación de contraseña.
 - Inicio de sesión con credenciales seguras.
-- Recuperación de contraseña mediante correo electrónico.
+- Recuperación de contraseña.
 - Integrado con Docker para un despliegue rápido y sencillo.
-- Pruebas automatizadas para garantizar la calidad del código.
-
+  
 ---
 
 ## 🚀 Tecnologías Utilizadas
@@ -34,10 +33,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 ### 📋 Pasos
 
-1. Clona el repositorio:
-
-   git clone https://github.com/usuario/microservicio-autenticacion.git
-   cd microservicio-autenticacion
+1. Clona el repositorio.
 
 2. Crea un archivo .env en la raíz del proyecto con las siguientes variables:
 
