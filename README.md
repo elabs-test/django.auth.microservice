@@ -35,16 +35,15 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
 1. Clona el repositorio.
 
-2. Crea un archivo .env apartir de .env.example en la carpeta raiz del proyecto.
+2. Crea un archivo .env basado en el archivo .env.example ubicado en la carpeta raíz del proyecto,edita el archivo .env para incluir la configuración necesaria. A continuación, se muestra un ejemplo con los valores predeterminados:
 
-- `POSTGRES_DB`=name_bd
-- `POSTGRES_USER`=users_bd
-- `POSTGRES_PASSWORD`=password_bd
+- `POSTGRES_DB`= auth_db
+- `POSTGRES_USER`= postgres
+- `POSTGRES_PASSWORD`=adminpass
 - `POSTGRES_HOST`=db
 - `POSTGRES_PORT`=5432
 
-3. Verifica las dependencias en el archivo requirements.txt:
-
+1. Verifica las dependencias en el archivo requirements.txt:
 
 - asgiref==3.8.1
 - Django==5.1.4
@@ -53,14 +52,11 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 - tzdata==2024.2
 - python-decouple==3.8
 
-+ Asegúrate de que estas dependencias están instaladas en tu contenedor Docker.
-
 4. Construye y ejecuta los contenedores:
 
 ``Docker-compose up --build ``
 
 5. Aplica las migraciones de la base de datos:
-
 
 `docker-compose exec web python manage.py migrate`
 
