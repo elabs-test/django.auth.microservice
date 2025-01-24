@@ -1,4 +1,4 @@
-# Users/views/recovery_view.py
+# users/views/recovery_view.py
 
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator

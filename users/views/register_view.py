@@ -3,7 +3,7 @@ from django.utils.decorators import method_decorator
 from django.http import JsonResponse
 from django.views import View
 import json
-from Users.services import create_user
+from users.services import create_user
 
 
 @method_decorator(csrf_exempt, name='dispatch')

@@ -104,7 +104,7 @@ Ejecuta todas las pruebas:
 
  Solución de Problemas 🛠️
 
-- Error 404 en un endpoint: Verifica las rutas configuradas en Users/urls.py.
+- Error 404 en un endpoint: Verifica las rutas configuradas en users/urls.py.
 
 - Base de datos no conectada: Asegúrate de que las variables en el archivo .env estén correctas.
 
