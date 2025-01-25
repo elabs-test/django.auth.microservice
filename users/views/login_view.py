@@ -1,11 +1,11 @@
-# Users/views/login_view.py
+# users/views/login_view.py
 
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.http import JsonResponse
 from django.views import View
 import json
-from Users.services import authenticate_user
+from users.services import authenticate_user
 
 @method_decorator(csrf_exempt, name='dispatch')
 class LoginView(View):
