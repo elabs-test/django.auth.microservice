@@ -3,28 +3,21 @@ from django.utils.decorators import method_decorator
 from django.http import JsonResponse
 from django.views import View
 import json
-from users.services import create_user
-
+from users.serializers import RegisterSerializer
 
 @method_decorator(csrf_exempt, name='dispatch')
 class RegisterView(View):
     def post(self, request):
         try:
             data = json.loads(request.body)
-            username = data.get('username')
-            email = data.get('email')
-            password = data.get('password')
+            serializer = RegisterSerializer(data=data)
 
-            # Validar que todos los campos están presentes
-            if not username or not email or not password:
-                return JsonResponse({"error": "Faltan datos"}, status=400)
+            if serializer.is_valid():
+                user = serializer.save()
+                return JsonResponse({"message": "Usuario registrado con éxito", "user_id": user.id}, status=201)
 
+            return JsonResponse({"error": serializer.errors}, status=400)
 
-            # Crear usuario
-            user = create_user(username, email, password)
-            return JsonResponse({"message": "Usuario registrado con éxito", "user_id": user.id}, status=201)
-
-        except ValueError as e:
-            return JsonResponse({"error": str(e)}, status=400)
         except Exception as e:
             return JsonResponse({"error": f"Error interno: {str(e)}"}, status=500)
+
