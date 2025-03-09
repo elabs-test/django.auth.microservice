@@ -54,9 +54,9 @@
 
 4. Construye y ejecuta los contenedores:
  
-  `docker-compose build`
+  `docker compose build`
 
-  `docker-compose up `
+  `docker compose up `
 
   - El servidor estará disponible en http://localhost:8000. 🌐
 

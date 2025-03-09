@@ -1,3 +1,4 @@
+
 services:
   # Servicio de Django
   web:
@@ -33,6 +34,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
 
+# Definir volumen persistente para Postgres
 volumes:
   postgres_data:
 
