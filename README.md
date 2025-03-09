@@ -95,14 +95,6 @@
   "email": "correo@example.com"
  }
  
-7. Ejecución de Pruebas 🧪
-
-* El proyecto incluye pruebas automatizadas para validar la funcionalidad:
-
-  Ejecuta todas las pruebas ingresando al contenedor donde tengas la funcionalidad de Django  y ejecuta el comando:
-
-- `python manage.py test`
-
 🔑 Sobre la SECRET_KEY
   El proyecto ya incluye una SECRET_KEY predeterminada en el archivo .env, por lo que no necesitas cambiar nada.
 
